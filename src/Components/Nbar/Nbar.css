@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  /* background-color: rgba(1, 1, 17, 0.905); */
+  /* color: rgba(1, 1, 17, 0.908); */
+  font-family: Inter-Regular, Roboto, Helvetica, Arial, sans-serif;
+  font-size: 101%;
+  font-weight: 600;
+  /* margin: auto; */
+  margin: 0;
+  padding: 0;
+}
+
+#navbar {
+  /* margin: auto; */
+  margin-top: 0;
+  margin-left: 0;
+  height: 60px;
+  /* background-color: white; */
+  /* color: transparent; */
+  /* opacity: 0.5; */
+  position: sticky;
+  top: 0;
+  z-index: 4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  /* border: 1px solid red; */
+}
+#logo {
+  background-color: transparent;
+  /* opacity: 1; */
+  margin-left: 2%;
+  position: relative;
+  z-index: 1;
+}
+#navbar > :nth-child(2) {
+  width: 74%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: transparent;
+}
+#logo img {
+  /* opacity: 0.5; */
+  background-color: transparent;
+  width: 50%;
+}
+#blue-background {
+  padding-top: 2%;
+  margin-top: 3.5%;
+  background-color: rgba(1, 1, 17, 0.905);
+  /* border: 2px solid green; */
+}
+#navpages {
+  width: 40%;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid red; */
+  margin-left: 8%;
+  align-items: center;
+}
+.navLinks {
+  text-decoration: none;
+  color: white;
+  opacity: 0.6;
+}
+
+#buttons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  /* border: 1px solid red; */
+  margin-right: 2%;
+}
+#loc-div {
+  /* border: 1px solid green; */
+  border-radius: 10px;
+  width: 30%;
+  height: 35px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-weight: 200;
+  padding: 5px 10px;
+}
+#loc-div:hover {
+  background-color: rgb(46, 49, 60);
+}
+
+#place {
+  background-color: transparent;
+}
+#place:hover {
+  cursor: pointer;
+}
+
+#loc-text {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  width: 80%;
+  color: whitesmoke;
+  opacity: 0.6;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+  font-weight: 400;
+  align-items: center;
+}
+
+#loc-img {
+  width: 50%;
+  height: auto;
+  border-radius: 50%;
+  text-decoration: none;
+  text-align: center;
+  margin-left: 0;
+}
+#loc-img > img {
+  width: 100%;
+}
+
+#app-div {
+  border: 2px solid white;
+  border-radius: 7px;
+  width: 20%;
+  height: 30px;
+  margin-left: 5%;
+  align-items: center;
+  text-align: center;
+}
+#app {
+  margin: auto;
+  margin-top: 5%;
+  border: none;
+  background-color: transparent;
+}
+#app-div:hover {
+  transition: 0.2s;
+  border: 2px solid rgb(139, 140, 143);
+}
+#app-div > button > a {
+  color: white;
+  font-size: smaller;
+  text-decoration: none;
+}
+
+.login-div {
+  width: 45px;
+  height: 45px;
+  background-image: url("https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_26,ar_1,q_auto:eco,dpr_2,f_auto,fl_progressive/image/test/header/Profile.png");
+  background-repeat: no-repeat;
+  background-size: 65% 65%;
+  background-position: center;
+  border-radius: 50%;
+  margin-left: 5%;
+  margin-right: 0px;
+  border: none;
+  background-color: transparent;
+  /* border: 1px solid green; */
+}
+
+.login-div:hover {
+  background-color: rgb(46, 49, 60);
+}
+
+#cart-div {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  margin-left: 5%;
+  background-image: url("https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,q_auto:eco,dpr_2,f_auto,fl_progressive//image/test/cart-dark-theme.svg");
+  background-repeat: no-repeat;
+  background-size: 55% 55%;
+  background-position: center;
+  border: none;
+  background-color: transparent;
+}
+
+#cart-div:hover {
+  background-color: rgb(46, 49, 60);
+}
+
+/*Responsive part*/
+#Resnavbar {
+  margin-top: 0;
+  margin-left: 0;
+  height: 55px;
+  width: 97%;
+  position: fixed;
+  top: 0;
+  z-index: 4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(21, 23, 28);
+  padding: 0 16px;
+}
+.logo {
+  background-color: transparent;
+  padding-left: 7%;
+  height: 37.5px;
+  width: 35px;
+  margin:0px;
+}
+.logoImg {
+  height: 37.5px;
+  width: 35px;
+}
+#ResPlace {
+  height: 19px;
+  width: 95px;
+  padding: 7px 10px;
+  font-size: 13px;
+  color: rgb(255, 255, 255, 0.6);
+  background-color: transparent;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  font-family: Inter-Regular, Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  margin-top: 3px;
+}
+#menu{
+  height: 50px;
+  width: 36px;
+}
+@media (max-width: 768px) {
+  #navbar {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) {
+  #Resnavbar {
+    display: none;
+  }
+}

@@ -1,0 +1,52 @@
+
+.modal-header {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .close-button {
+    background: none;
+    border: none;
+    font-size: 26px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #808080;
+    padding-top: 5px;
+    padding-right: 20px;
+  }
+  .close-button:hover {
+    cursor: pointer;
+    color: #ffffff;
+  }
+  #main{
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .LoginLogo{
+    padding-top: 20px;
+    width: 75px;
+    height: 80px;
+  }
+  .LoginLogoText{
+    padding-top: 10px;
+    height: 40px;
+    width: 150px;
+  }
+  
+  
+  #policy {
+    width: 75%;
+    font-size: 14px;
+    color: #999999;
+  }
+  
+  #policy>a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  #policy>a:hover {
+    color: #ff0000;
+    text-decoration: none;
+  }
+  

@@ -1,0 +1,260 @@
+<div>
+  <div className="imgs">
+    <img src="imgs/img-1.png" data-img id="img-1" className="top-section-img show" />
+    <img src="imgs/img-2.png" data-img id="img-2" />
+    <img src="imgs/img-3.png" data-img id="img-3" />
+  </div>
+  <section className="top-section full-screen-section">
+    <div className="left">
+      <h1>Build Better Backends</h1>
+      <p>
+        The only platform that gives AI the ability to autonomously build web
+        services.
+      </p>
+    </div>
+    <div className="right" />
+  </section>
+  <section className="full-screen-section first-main-section">
+    <h1>Completely Visual</h1>
+    <p>Never touch the command line, from provision to production.</p>
+    <div data-img-to-show="#img-1" />
+  </section>
+  <section className="full-screen-section">
+    <h1>Full Stack</h1>
+    <p>
+      Never manage infrastructure again. One click gets you: a database, APIs,
+      deployments, hosting, etc.
+    </p>
+    <div data-img-to-show="#img-2" />
+  </section>
+  <section className="full-screen-section">
+    <h1>Launch Faster</h1>
+    <p>Logical can get systems to market in minutes instead of weeks.</p>
+    <div data-img-to-show="#img-3" />
+  </section>
+</div>
+
+
+
+
+
+import { useRef, useEffect } from "react";
+// import video from '../../assets/video.mp4';
+// import elitePhoto from '../../assets/cult-pass-elite-partial.png';
+// import prophoto from '../../assets/cult-pass-pro-partial.png';
+// import icpImage from '../../assets/icp_cg.png';
+// import icp1Image from '../../assets/icp_cl.png';
+// import icp2Image from '../../assets/icp_cb.png';
+// import scale from '../../assets/cult-transform-glass-green.webp';
+// import scale2 from '../../assets/glass.png';
+// import scale3 from '../../assets/glass-workout-gear.png';
+// import scale4 from '../../assets/sugar-fit-glass-purple.png';
+// import a1 from '../../assets/3rd.png';
+// import b1 from '../../assets/career.webp';
+// import tile_1 from '../../assets/tile-1.png';
+// import tile_2 from '../../assets/tile-2.png';
+// import tile_3 from '../../assets/tile-3.png';
+// import tile_4 from '../../assets/tile-4.png';
+// import tile_5 from '../../assets/tile-5.png';
+// import tile_6 from '../../assets/tile-6.png';
+// import tile_7 from '../../assets/tile-7.png';
+// import tile_8 from '../../assets/tile-8.png';
+
+// function Hpage() {
+
+//   const innRefs = useRef([]);
+//   const slideInRefs = useRef([]);
+//   useEffect(() => {
+
+//     const appearOptions = {
+//       threshold: 0.1,
+//     };
+
+//     const appearOnScroll = new IntersectionObserver((entries) => {
+//       entries.forEach((entry) => {
+//         if (entry.isIntersecting) {
+//           entry.target.classList.add('appear');
+//           appearOnScroll.unobserve(entry.target); 
+//         }
+//       });
+//     }, appearOptions);
+
+//     innRefs.current.forEach((inn) => {
+//       if (inn) {
+//         appearOnScroll.observe(inn);
+//       }
+//     });
+
+//     slideInRefs.current.forEach((slider) => {
+//       if (slider) {
+//         appearOnScroll.observe(slider);
+//       }
+//     });
+
+  
+//     return () => appearOnScroll.disconnect();
+//   }, []);
+
+//   return (
+//     <div>
+//       <div>
+//         <video width="100%" height="100%" controls autoPlay loop>
+//           <source src={video} type="video/mp4" />
+//           <div className="video-overlay"></div>
+//         </video>
+//       </div>
+
+//       <div className="container">
+//         <div className="x">
+//           <h2>cultpass</h2>
+//           <img src={elitePhoto} alt="cult-pass-elite-partial" />
+//           <p>Unlimited access to group classes,</p>
+//           all gyms and at-home workouts
+//         </div>
+//         <div className="x">
+//           <h2>cultpass</h2>
+//           <img src={prophoto} alt="cult-pass-pro-partial" />
+//           <p>Unlimited access to all PRO gyms,</p>
+//           at-home workouts
+//         </div>
+//         <div className="x">
+//           <h2>cultpass</h2>
+//           <img src={elitePhoto} alt="cult-pass-elite-partial" />
+//           <p>Unlimited access to single center,</p>
+//           at-home workouts
+//         </div>
+//       </div>
+
+//       <div className="q">
+//         <h2>cultpass</h2>
+//         <button className="learn-more-button">Learn More</button>
+//       </div>
+
+//       <div className="container">
+//         <div className="z">
+//           <h2>cultpass</h2>
+//           <img src={icpImage} alt="icp_cg.png" />
+//           <img src={elitePhoto} alt="cult-pass-elite-partial" />
+//         </div>
+//         <div className="z">
+//           <h2>cultpass</h2>
+//           <img src={icp2Image} alt="icp_cb.png" />
+//           <img src={prophoto} alt="cult-pass-pro-partial" />
+//         </div>
+//         <div className="z">
+//           <h2>cultpass</h2>
+//           <img src={icp1Image} alt="icp_cl.png" />
+//           <img src={prophoto} alt="cult-pass-pro-partial" />
+//         </div>
+//       </div>
+
+//       <div className="container">
+//         <div className="z">
+//           <ul>
+//             Unlimited access to
+//             <li>At-center group classes</li>
+//             <li>All ELITE & PRO gyms</li>
+//             <li>At-home live workouts</li>
+//           </ul>
+//           <div className="button-group">
+//             <button className="try-button">TRY FOR FREE</button>
+//             <button className="buy-button">LEARN MORE</button>
+//           </div>
+//         </div>
+//         <div className="z">
+//           <ul>
+//             Unlimited access to
+//             <li>All PRO gyms</li>
+//             <li>2 Sessions/month at ELITE gyms & group classes</li>
+//             <li>At-home live workouts</li>
+//           </ul>
+//           <div className="button-group">
+//             <button className="try-button">TRY FOR FREE</button>
+//             <button className="buy-button">LEARN MORE</button>
+//           </div>
+//         </div>
+//         <div className="z">
+//           <ul>
+//             Unlimited access to
+//             <li>At home workouts</li>
+//             <li>Celebrities Workouts</li>
+//             <li>Goal-based Workouts and Meditation Session</li>
+//           </ul>
+//           <div className="button-group">
+//             <button className="try-button">TRY FOR FREE</button>
+//             <button className="buy-button">LEARN MORE</button>
+//           </div>
+//         </div>
+//       </div>
+
+//       <div className="x3">
+//         <div style={{ backgroundImage: `url(${scale})` }} className="x2">
+//           <h2>cult transformation</h2>
+//           Get coached to lose weight for good
+//         </div>
+//         <div style={{ backgroundImage: `url(${scale2})` }} className="x2">
+//           <h3>The .fit way</h3>
+//           Making health easy, one day at a time
+//         </div>
+//       </div>
+
+//       <div className="x3">
+//         <div style={{ backgroundImage: `url(${scale3})` }} className="x2">
+//           <h2>Workout Gear</h2>
+//           Everything you need for your workout
+//         </div>
+//         <div style={{ backgroundImage: `url(${scale4})` }} className="x2">
+//           <h3>Sugar.fit</h3>
+//           Reverse Type 2 Diabetes and Prediabetes
+//         </div>
+//       </div>
+
+//       <div style={{ backgroundImage: `url(${a1})` }} className="x4">
+//         <div className="x2">
+//           <h3>Download the most loved<br />fitness app</h3>
+//           <h3></h3>
+//           Start your fitness journey with us. Join the cult
+//         </div>
+//       </div>
+
+//       <div className="x3">
+//         <div className="m" style={{ backgroundImage: `url(${b1})` }}>
+//           <h2 className="h3">Careers at Cult</h2>
+//           <div className="q">
+//             <button className="learn-more-button">Learn More</button>
+//           </div>
+//         </div>
+//         <div className="m"></div>
+//       </div>
+      
+//       <div className="last1 a">
+     
+//         <div className="  inn slide-in1 from-left " style={{ backgroundImage: `url(${scale})` }} ref={el => innRefs.current[0] = el}></div>
+//         <div className=" inn  slide-in2 from-right " style={{ backgroundImage: `url(${scale})` }} ref={el => innRefs.current[1] = el}></div>
+        
+//       </div>
+//       {/* <div className="last2 ">
+     
+//      <div className="  inn slide-in1 from-left " ></div>
+//      <div className=" inn  slide-in2 from-right " style={{ backgroundImage: `url(${scale})` }} ref={el => innRefs.current[2] = el}></div>
+//      <div className=" inn  slide-in2 from-right " ></div>
+//    </div> */}
+//       {/* <div className="last">
+//         <div className="inn" style={{ backgroundImage: `url(${scale})` }} ref={el => innRefs.current[4] = el}></div>
+//         <div className="inn" style={{ backgroundImage: `url(${scale})` }} ref={el => innRefs.current[5] = el}></div>
+//         <div className="inn" style={{ backgroundImage: `url(${scale})` }} ref={el => innRefs.current[6] = el}></div>
+//         <div className="inn" style={{ backgroundImage: `url(${scale})` }} ref={el => innRefs.current[7] = el}></div>
+//       </div> */}
+
+//       {/* <div className="slide-in-container">
+//         <div className="slide-in" ref={el => slideInRefs.current[0] = el}></div>
+//         <div className="slide-in" ref={el => slideInRefs.current[1] = el}></div>
+//         <div className="slide-in" ref={el => slideInRefs.current[2] = el}></div>
+//         <div className="slide-in" ref={el => slideInRefs.current[3] = el}></div>
+//       </div> */}
+     
+//     </div>
+//   );
+// }
+
+// export default Hpage;

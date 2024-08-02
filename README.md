@@ -1,2 +1,1 @@
-# Clone-2
-arya 
+Website Clone Made Using React
